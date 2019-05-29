@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<style type="text/css">
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+		v2.0 | 20110126
+		License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Poppins&display=swap" rel="stylesheet"> 
+	<style type="text/css">
+		:root {
+			--c-white: #ffffff;
+			--c-white-lighten: #b8bcbf;
+			--c-grey: #3b3e43;
+			--c-grey-darken: #161616;
+			--c-purple-1: #9a2e9b;
+			--c-purple-2: #512ec6;
+			--c-orange-1: #fe8b01;
+			--c-orange-2: #c32f82;
+			--c-green-1: #21d789;
+			--c-green-2: #0c92fa;
+		}
+		html {
+			background: var(--c-grey-darken);
+			font-family: 'Anonymous Pro', monospace;
+			line-height: 1.9;
+			color: var(--c-white);
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'Poppins', sans-serif;
+		}
+		ul {
+			color: var(--c-white-lighten);
+
+		}
+		body {
+			padding-left: 2em;
+			padding-right: 2em;
+		}
+		main {
+			display: grid;
+			grid-auto-flow: row dense;
+			grid-auto-rows: minmax(100px, auto);
+			grid-template-columns: repeat(3, minmax(100px, 1fr));
+			grid-gap: 1em;
+		}
+		p {
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+		h1 {
+			font-size: 3.5rem;
+		}
+		h2 {
+			font-size: 1.5rem;
+		}
+		h3, h4 {
+			font-size: 1.25rem;
+		}
+		h5, h6 {
+			font-size: 1rem;
+		}
+		header {
+			height: 25vh;
+			min-height: 200px;
+			display: flex;
+			align-items: center;
+		}
+		.card {
+			padding: 1em;
+			border: 1px solid var(--c-grey);
+		}
+		.card--double {
+			grid-row-end: span 2;
+		}
+		.card--triple {
+			grid-row-end: span 3;
+		}
+		.resources__list li {
+			white-space: nowrap; 
+			width: 95%; 
+			overflow: hidden;
+			text-overflow:clip;
+		}
+		a {
+			text-decoration: none;
+			background: -webkit-linear-gradient(45deg, var(--c-orange-1), var(--c-orange-2));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	</style>
+</head>
+<body>
+	<header>
+	<h1><%= title %></h1>
+	</header>
+	<main>
+	<% list.forEach(function(l) { %>
+	<% var a = l.topics.length + l.resources.length, c = 'card' %>
+	<% if (a > 10) { c += ' card--triple' } else if (a > 6) { c += ' card--triple' } %>
+	<div class="<%= c %>">
+		<h2 class="card__title"><%= l.title %></h2>
+		<ul class="card__list">
+			<% l.topics.forEach(function(t) { %>
+			<li><%= t %></li>
+			<% }) %>
+		</ul>
+		<div class="card__extra resources">
+			<h3>Resources</h3>
+			<ul class="resources__list">
+				<% l.resources.forEach(function(r) { %>
+				<li><a href="<%= r %>" target="_blank"><%= r %></a></li>
+				<% }) %>
+			</ul>
+		</div>
+	</div>
+	<% }) %>
+	</main>
+</body>
+</html>

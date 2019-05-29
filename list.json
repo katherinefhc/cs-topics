@@ -1,0 +1,263 @@
+[
+	{
+		"title": "Computer Science",
+		"topics": [
+			"Types and objects",
+			"Classes and inheritance",
+			"Pointers",
+			"Loops, logical statements",
+			"Exceptions try/except try/catch",
+			"Recursion",
+			"File I/O",
+			"Data Streams",
+			"Private vs public",
+			"Static methods and variables"
+		],
+		"resources": [
+			"http://cs.pugetsound.edu/~dchiu/cs161/"
+		]
+	},
+	{
+		"title": "Programming Paradigms",
+		"topics": [
+			"Imperative, Procedural",
+			"Functional",
+			"Object-Oriented",
+			"Scripting"
+		],
+		"resources": []
+	},
+	{
+		"title": "Software Specifications",
+		"topics": [
+			"Software lifecycle",
+			"Requirements and specifications",
+			"Structure diagrams",
+			"Flow charts, UML",
+			"Computer-Aided Software Engineering (CASE)",
+			"Estimation",
+			"Project Management"
+		],
+		"resources": []
+	},
+	{
+		"title": "Software Architecture & Design",
+		"topics": [
+			"MVC",
+			"Abstraction and modularity",
+			"Memory management",
+			"Subprograms",
+			"Parameter passing, repetition",
+			"Top-down design",
+			"Queuing theory",
+			"File systems"
+		],
+		"resources": [
+			"http://www.highercomputingscience.org/wiki/Parameter_passing",
+			"https://www.bbc.com/bitesize/guides/z2q6hyc/revision/1",
+			"https://www.bbc.com/bitesize/guides/z2q6hyc/revision/4"
+		]
+	},
+	{
+		"title": "Software Verification & Validation",
+		"topics": [
+			"Debugging",
+			"Assertions",
+			"Assertion and test case anti-patterns",
+			"Black-Box vs White Box (functional vs structural)",
+			"Unit, Component, Integration, E2E Tests",
+			"Smoke and Soak tests",
+			"Test planning and design",
+			"Execution analysis",
+			"Result documentation",
+			"Testing in agile systems",
+			"Test-Driven Development TDD"
+		],
+		"resources": []
+	},
+	{
+		"title": "Data Structures",
+		"topics": [
+			"Linked lists",
+			"Stacks",
+			"Queues",
+			"Binary trees",
+			"Balanced Binary Trees",
+			"Hash tables",
+			"Heaps for priority queues",
+			"Graphs"
+		],
+		"resources": [
+			"https://www.cs.rutgers.edu/courses/data-structures",
+			"https://medium.com/basecs"
+		]
+	},
+	{
+		"title": "Algorithms (Search & Sort)",
+		"topics": [
+			"Complexity",
+			"Time and space requirement analysis",
+			"Sequential search",
+			"Binary Search",
+			"Binary search trees",
+			"Balanced binary search trees",
+			"Selection Sort",
+			"Bubble Sort",
+			"Shaker Sort",
+			"Selection Sort"
+		],
+		"resources": [
+			"https://medium.com/basecs",
+			"http://cs.pugetsound.edu/~dchiu/cs161/"
+		]
+	},
+	{
+		"title": "Computer Hardware",
+		"topics": [
+			"Networking deices - routers, switches, modems, hubs",
+			"Microprocessors",
+			"RAM, primary storage",
+			"Basic Input/Output BIOS",
+			"Motherboards",
+			"Power supply",
+			"Hard drives",
+			"Removable media",
+			"Printers",
+			"Firmware",
+			"Embedded systems",
+			"Circuit Analysis and logic design"
+		],
+		"resources": [
+			"https://eapps.austincc.edu//faculty/syllabus.php?id=254728",
+			"https://www.slideshare.net/mite6025.hku/introduction-to-computer-hardware",
+			"https://www.coursera.org/learn/technical-support-fundamentals"
+		]
+	},
+	{
+		"title": "Computer Networks",
+		"topics": [
+			"Protocol layers, HTTP",
+			"Electronic mail SMTP, POP3, IMAP, MIME",
+			"Sockets",
+			"Transport layer",
+			"TCP and UDP",
+			"Flow control",
+			"Error detection",
+			"Congestion control",
+			"Routing, switch basics",
+			"IP semantics",
+			"Global internet (areas, BGP, IPv6)",
+			"Link layer and link state",
+			"Framing",
+			"Ethernet",
+			"Wireless LANs",
+			"Bluetooth",
+			"Switching and bridging",
+			"Encoding",
+			"Wireless and mobile networks",
+			"Web Services, network management DNS SNMP"
+		],
+		"resources": [
+			"http://studentsfocus.com/cs6551-cn-syllabus-computer-networks-syllabus-cse-4th-sem-anna-university/"
+		]
+	},
+	{
+		"title": "Operating Systems",
+		"topics": [
+			"Kernel components",
+			"Threads",
+			"Computer multi-tasking",
+			"Scheduling",
+			"Cron"
+		],
+		"resources": [
+			"https://www.udacity.com/course/introduction-to-operating-systems--ud923"
+		]
+	},
+	{
+		"title": "Distributed Systems",
+		"topics": [
+			"Remote procedure / method calls",
+			"Multi casting",
+			"Deadlocks",
+			"Access control",
+			"Fault tolerance",
+			"Firewall design",
+			"Distributed file systems",
+			"Machine virtualization",
+			"Clustering",
+			"Clock synchronization",
+			"Distributed transactions",
+			"Shared memory and memory consisency models",
+			"Error propogation",
+			"Parallel computing"
+		],
+		"resources": [
+			"https://www.cs.rutgers.edu/courses/distributed-systems-concepts-and-design"
+		]
+	},
+	{
+		"title": "Databases",
+		"topics": [
+			"Relational (DBMS) vs Unstructured",
+			"Entity Relationship Model",
+			"Record storage",
+			"Indexing structures",
+			"Functional Dependencies and Normal Forms",
+			"Query optimizaion",
+			"Concurrency control",
+			"Crash recovery",
+			"DBMS performance tuning"
+		],
+		"resources": [
+			"https://datamastery.gitlab.io/databases/syllabus.html"
+		]
+	},
+	{
+		"title": "Data Literacy",
+		"topics": [
+			"Data visualization",
+			"Data wrangling and pre-processing",
+			"Data mining",
+			"Frequent itemsets, link analysis, mining graph data",
+			"Machine learning",
+			"Nearest neighbor",
+			"Decision trees",
+			"Ensembe methods",
+			"Support vector machines",
+			"Spectral clustering, hierarchical clustering",
+			"Dimensionality reduction"
+		],
+		"resources": [
+			"https://www.cs.rutgers.edu/courses/introduction-to-data-science"
+		]
+	},
+	{
+		"title": "Security",
+		"topics": [
+			"Athentication protocols",
+			"Cryptography",
+			"Hash functions",
+			"Block ciphers",
+			"Symmetrics encryption schemes",
+			"Message Authentication Codes MACs",
+			"Autheticated encryption",
+			"Public Key Encryption PKI",
+			"Digital Signatures",
+			"Secret sharing",
+			"Key exchange",
+			"Reverse engineering",
+			"Malware"
+		],
+		"resources": [
+			"http://www.iisp.gatech.edu/master-cybersecurity-course-listing"
+		]
+	},
+	{
+		"title": "Human-Centered Design",
+		"topics": [
+			"why don't they teach this in degree programs???"
+		],
+		"resources": []
+	}
+]
